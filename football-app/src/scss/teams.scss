@@ -1,0 +1,340 @@
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: Fjalla One;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: white;
+}
+.root {
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(20, 3, 82, 0.6);
+}
+
+html {
+  background-image: url("./img/teams-bg.jpg");
+  background-repeat: repeat-y;
+  background-size: 100vw;
+}
+
+table {
+  width: 700px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  border-collapse: collapse;
+  border: 1px solid yellowgreen;
+  cursor: pointer;
+}
+
+th,
+td {
+  padding: 10px;
+  height: 50px;
+  border-bottom: 1px solid yellowgreen;
+  border-right: 1px solid yellowgreen;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: center;
+}
+
+th {
+  color: #ffe221;
+  font-size: 14px;
+}
+
+.match {
+  padding: 3px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.match:hover {
+  background-color: gray;
+}
+
+.heading {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffe221;
+  margin-bottom: 10px;
+}
+.heading span {
+  text-transform: uppercase;
+  color: #ffe221;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.sasha {
+  text-align: center;
+  background-color: #4b484a;
+  cursor: pointer;
+}
+.pasha {
+  text-align: center;
+  background-color: #7e6250;
+  cursor: pointer;
+}
+.www {
+  background-color: inherit;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+.winner {
+  color: #77ff21;
+}
+.loser {
+  color: red;
+}
+.draw {
+  color: #ffe221;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  right: 30%;
+  top: 30%;
+}
+
+.modal-content {
+  background-image: url(img/qqq.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+div[data-modal="match"] form {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+div[data-modal="match"] input {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000000;
+}
+div[data-modal="match"] form span {
+  font-size: 25px;
+  color: #000000;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+div[data-modal="match"] .modal-btn {
+  /* position: absolute; */
+  bottom: 35%;
+}
+.btn {
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: inherit;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  color: yellow;
+  border-color: yellow;
+}
+
+.open {
+  display: block;
+}
+.close {
+  display: none;
+}
+
+div[data-modal="table"] .modal-content {
+  width: 400px;
+  height: 300px;
+  padding: 60px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+div[data-modal="table"] form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+div[data-modal="table"] form > ul {
+  width: 100%;
+}
+div[data-modal="table"] li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+div[data-modal="table"] li > div {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+div[data-modal="table"] li input {
+  margin-right: 3px;
+}
+.modal-content .title {
+  color: #fff;
+  margin-right: 20px;
+}
+.table-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.team-logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.team-logo p {
+  margin-left: 20px;
+  text-align: left;
+}
+.points {
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+}
+
+/*!============styles for notifications============================*/
+#toast {
+  visibility: hidden;
+  width: 100%;
+  max-width: 450px;
+  background: #f8ffff;
+  border: 1px solid #bedfe6;
+  border-left: 5px solid #2185d0;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4s;
+  animation: fadein 0.5s, fadeout 0.5s 4s;
+}
+#toast.show:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+#toast.top {
+  top: 20px;
+  bottom: auto;
+}
+
+#toast.success {
+  background: rgba(2, 7, 75, 0.979);
+  border: 1px solid #bee6bf;
+  border-left: 5px solid #50ee38;
+  color: #fff;
+  font-size: 36px;
+}
+
+a {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 5px 10px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #ccc;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+a:hover {
+  color: yellow;
+  border-color: yellow;
+}
+a:active {
+  color: red;
+  border-color: red;
+}
+.audio {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  background-color: inherit;
+}

@@ -1,0 +1,28 @@
+.music-player {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  width: 80px;
+  height: auto;
+  background-color: inherit;
+  text-align: center;
+  overflow: visible;
+  white-space: nowrap;
+}
+.music-btn {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.icon {
+  width: 40px;
+}
+.icon:hover {
+  transform: scale(0.8);
+}
+.song {
+  color: rgb(164, 61, 233);
+  font-size: 20px;
+  font-weight: 500;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
