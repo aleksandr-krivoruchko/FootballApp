@@ -5,193 +5,193 @@ const source = {
       id: 1,
       group: "a",
       name: "Бавария",
-      logo: "img/logo/bayern.png",
+      logo: "./images/logo/bayern.png",
     },
     {
       id: 2,
       group: "a",
       name: "Галатасарай",
-      logo: "img/logo/gala.png",
+      logo: "./images/logo/gala.png",
     },
     {
       id: 3,
       group: "a",
       name: "Манчестер Юнайтед",
-      logo: "img/logo/mu.png",
+      logo: "./images/logo/mu.png",
     },
     {
       id: 4,
       group: "a",
       name: "Копенгаген",
-      logo: "img/logo/København.png",
+      logo: "./images/logo/København.png",
     },
     {
       id: 5,
       group: "b",
       name: "Арсенал",
-      logo: "img/logo/arsenal.png",
+      logo: "./images/logo/arsenal.png",
     },
     {
       id: 6,
       group: "b",
       name: "Ланс",
-      logo: "img/logo/lens.png",
+      logo: "./images/logo/lens.png",
     },
     {
       id: 7,
       group: "b",
       name: "Севилья",
-      logo: "img/logo/sev.png",
+      logo: "./images/logo/sev.png",
     },
     {
       id: 8,
       group: "b",
       name: "ПСВ",
-      logo: "img/logo/psv.png",
+      logo: "./images/logo/psv.png",
     },
     {
       id: 9,
       group: "c",
       name: "Реал Мадрид",
-      logo: "img/logo/real.png",
+      logo: "./images/logo/real.png",
     },
     {
       id: 10,
       group: "c",
       name: "Наполи",
-      logo: "img/logo/napoli.png",
+      logo: "./images/logo/napoli.png",
     },
     {
       id: 11,
       group: "c",
       name: "Брага",
-      logo: "img/logo/braga.png",
+      logo: "./images/logo/braga.png",
     },
     {
       id: 12,
       group: "c",
       name: "Юнион Берлин",
-      logo: "img/logo/ub.png",
+      logo: "./images/logo/ub.png",
     },
     {
       id: 13,
       group: "d",
       name: "Реал Сосьедад",
-      logo: "img/logo/realsos.png",
+      logo: "./images/logo/realsos.png",
     },
     {
       id: 14,
       group: "d",
       name: "Интер",
-      logo: "img/logo/inter.png",
+      logo: "./images/logo/inter.png",
     },
     {
       id: 15,
       group: "d",
       name: "Зальцбург",
-      logo: "img/logo/salcb.png",
+      logo: "./images/logo/salcb.png",
     },
     {
       id: 16,
       group: "d",
       name: "Бенфика",
-      logo: "img/logo/benf.png",
+      logo: "./images/logo/benf.png",
     },
     {
       id: 17,
       group: "e",
       name: "Фейенорд",
-      logo: "img/logo/fey.png",
+      logo: "./images/logo/fey.png",
     },
     {
       id: 18,
       group: "e",
       name: "Атлетико Мадрид",
-      logo: "img/logo/atlet.png",
+      logo: "./images/logo/atlet.png",
     },
     {
       id: 19,
       group: "e",
       name: "Лацио",
-      logo: "img/logo/lazio.png",
+      logo: "./images/logo/lazio.png",
     },
     {
       id: 20,
       group: "e",
       name: "Селтик",
-      logo: "img/logo/celtic.png",
+      logo: "./images/logo/celtic.png",
     },
     {
       id: 21,
       group: "f",
       name: "ПСЖ",
-      logo: "img/logo/psg.png",
+      logo: "./images/logo/psg.png",
     },
     {
       id: 22,
       group: "f",
       name: "Боруссия Дортмунд",
-      logo: "img/logo/bor.png",
+      logo: "./images/logo/bor.png",
     },
     {
       id: 23,
       group: "f",
       name: "Ньюкасл",
-      logo: "img/logo/nc.png",
+      logo: "./images/logo/nc.png",
     },
     {
       id: 24,
       group: "f",
       name: "Милан",
-      logo: "img/logo/milan.png",
+      logo: "./images/logo/milan.png",
     },
     {
       id: 25,
       group: "g",
       name: "Манчестер Сити",
-      logo: "img/logo/mc.webp",
+      logo: "./images/logo/mc.webp",
     },
     {
       id: 26,
       group: "g",
       name: "Лейпциг",
-      logo: "img/logo/leip.webp",
+      logo: "./images/logo/leip.webp",
     },
     {
       id: 27,
       group: "g",
       name: "Янг Бойз",
-      logo: "img/logo/yb.png",
+      logo: "./images/logo/yb.png",
     },
     {
       id: 28,
       group: "g",
       name: "Црвена Звезда",
-      logo: "img/logo/crvena.png",
+      logo: "./images/logo/crvena.png",
     },
     {
       id: 29,
       group: "h",
       name: "Барселона",
-      logo: "img/logo/barca.png",
+      logo: "./images/logo/barca.png",
     },
     {
       id: 30,
       group: "h",
       name: "Порту",
-      logo: "img/logo/porto.png",
+      logo: "./images/logo/porto.png",
     },
     {
       id: 31,
       group: "h",
       name: "Шахтер",
-      logo: "img/logo/shachtar.png",
+      logo: "./images/logo/shachtar.png",
     },
     {
       id: 32,
       group: "h",
       name: "Антверпен",
-      logo: "img/logo/ant.png",
+      logo: "./images/logo/ant.png",
     },
   ],
 };
@@ -209,19 +209,6 @@ const tableHeader = `<tr class="col">
 
 let data = null;
 const root = document.querySelector(".root");
-
-// const audio = document.createElement("AUDIO");
-// document.body.appendChild(audio);
-// audio.src = "./audio/Jain - Makeba.mp3";
-
-// document.body.addEventListener("keydown", function (e) {
-//   if (e.code === "KeyP") {
-//     audio.pause();
-//   }
-// });
-// document.addEventListener("load ", function () {
-//   audio.play();
-// });
 
 document.addEventListener("keydown", function (e) {
   if (e.code === "Escape") {

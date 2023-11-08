@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      href="img/ball.png"
+      href="images/stars.png"
       type="image/png"
-      title="Champions League"
+      title="Fuck Champions League"
     />
-    <title>BCL</title>
-    <link rel="stylesheet" href="teams.css" />
-    <link rel="stylesheet" href="music.css" />
+    <title>FCL</title>
+    <link rel="stylesheet" href="src/scss/reset.scss" />
+
+    <link rel="stylesheet" href="src/scss/teams.scss" />
+    <link rel="stylesheet" href="src/scss/music.scss" />
   </head>
   <body>
     <div class="root"></div>
@@ -20,14 +22,14 @@
       <p class="song">Song</p>
       <audio
         class="audio"
-        src="./audio/fast-lane-percussion.mp3"
+        src="audio/fast-lane-percussion.mp3"
         autoplay
       ></audio>
       <div class="btns">
         <div class="music-btn prev">
           <img
             class="icon"
-            src="./img/music/icons8-previous-64.png"
+            src="/images/music/icons8-previous-64.png"
             alt="prev"
             width="50px"
           />
@@ -35,7 +37,7 @@
         <div class="music-btn play">
           <img
             class="icon icon-src"
-            src="./img/music/icons8-stop-64.png"
+            src="/images/music/icons8-stop-64.png"
             alt="play"
             width="50px"
           />
@@ -43,7 +45,7 @@
         <div class="music-btn next">
           <img
             class="icon"
-            src="./img/music/icons8-next-64.png"
+            src="/images/music/icons8-next-64.png"
             alt="next"
             width="50px"
           />
@@ -54,7 +56,7 @@
     <div id="toast"></div>
     <a href="./index.html">home</a>
 
-    <script src="teams.js"></script>
-    <script src="music.js"></script>
+    <script src="src/js/teams.js"></script>
+    <script src="src/js/music.js"></script>
   </body>
 </html>

@@ -1,22 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
-  background-image: url(img/homepage.jpg);
+  background-image: url(/images/homepage.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   margin: 0 auto;
   overflow: hidden;
+  padding: 20px;
 }
-h1 {
-  color: #fff;
+h3 {
+  color: #ffffff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  animation: title 11s;
+}
+h1{
+	  color: #ffffff;
   text-align: center;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
-  margin-bottom: 90px;
-  animation: title 11s;
+  margin: 0;
+
 }
 
 img {
@@ -43,16 +64,21 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
   animation: stars 45s;
 }
-.stars img {
-  width: 300px;
-  margin-bottom: 50px;
+.stars-image {
+	width: 200px;
   animation-name: spin;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+.stars-image:hover{
+  animation-play-state: paused;
+scale: 1.05;
+}
+.fuck{
+	animation: fuck 41s;
 }
 #start {
   width: 5px;
@@ -112,7 +138,7 @@ img {
 }
 @keyframes stars {
   0% {
-    transform: translateY(300%);
+    transform: translateY(350%);
   }
 
   100% {
@@ -129,5 +155,19 @@ img {
   }
   100% {
     transform: scale(1) rotate(360deg);
+  }
+}
+@keyframes fuck {
+  0% {
+	opacity: 0;
+	scale: 0;
+  }
+  98%{
+	opacity: 0;
+	scale: 5;
+  }
+  100% {
+	opacity: 1;
+	scale: 1;
   }
 }

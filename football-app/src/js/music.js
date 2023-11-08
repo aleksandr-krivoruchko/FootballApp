@@ -30,18 +30,18 @@ loadSong(songs[songIndex]);
 
 function loadSong(song) {
   title.innerHTML = song;
-  musicAudio.src = `./audio/${song}.mp3`;
+  musicAudio.src = `audio/${song}.mp3`;
 }
 
 function playSong() {
   player.classList.add("playing");
-  iconSrc.src = "./img/music/icons8-stop-64.png";
+  iconSrc.src = "images/music/icons8-stop-64.png";
   musicAudio.play();
 }
 
 function stopSong() {
   player.classList.remove("playing");
-  iconSrc.src = "./img/music/icons8-play-64.png";
+  iconSrc.src = "images/music/icons8-play-64.png";
   musicAudio.pause();
 }
 
