@@ -20,7 +20,6 @@ function start() {
         <img src="images/sasha.png" alt="Sasha" />
       </div>
 		    <audio src="audio/gimn.mp3" autoplay></audio>
-
     </div>
 `;
   document.body.innerHTML = markup;
