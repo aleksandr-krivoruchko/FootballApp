@@ -298,10 +298,7 @@ function renderTable() {
 		<div class="modal-content">
         <form>
           <ul>
-            ${playerToggle(teams[0])}
-            ${playerToggle(teams[1])}
-            ${playerToggle(teams[2])}
-            ${playerToggle(teams[3])}
+			 ${teams.map((t) => t)}
 				</ul>
 				<button type="submit" class="btn table-btn">OK</button>
         </form>
